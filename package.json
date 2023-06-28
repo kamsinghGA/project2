@@ -1,9 +1,7 @@
 {
   "name": "trading-app2",
   "version": "0.0.0",
-  "engines": {
-    "node": "20.3.0"
-  },
+
   "private": true,
   "scripts": {
     "start": "node server.js"
