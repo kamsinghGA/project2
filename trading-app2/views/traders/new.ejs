@@ -1,0 +1,26 @@
+<%- include('../partials/header') %>
+
+<h2>Create a New Trade</h2>
+
+<form method="POST" action="/traders" id="addNewTraders">
+
+    <br>
+
+  <input type="text" id="traderName" name="traderName" placeholder="Enter Your Name">
+
+  <input type="text" id="tickerName" name="tickerName" placeholder="Enter Ticker's Name">
+
+  <input type="text" id="strategyName" name="strategyName" placeholder="Enter Strategy's Name">
+
+  <textarea name="strategyDescription" id="strategyDescription" cols="30" rows="3" placeholder="Enter the Description"></textarea>
+  <!-- <input type="textarea" id="strategyDescription" name="strategyDescription" required> -->
+
+  <textarea name="indicators" id="indicators" cols="30" rows="3" placeholder="Indicators"></textarea>
+
+  <button type="submit">Enter Trade</button>
+</form>
+
+<p class="error"><%= errorMsg %></p>
+
+
+<%- include('../partials/footer') %>

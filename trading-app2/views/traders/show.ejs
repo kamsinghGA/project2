@@ -1,0 +1,26 @@
+<%- include('../partials/header') %>
+
+
+<div class="trader-info">
+    <h2><%= `${trader.traderName}'s Trades` %></h2>
+    
+    <h4 id="tickerName"><b>Ticker Name:</b> <%= trader.tickerName %></h4>
+    <h4><b>Strategy Name: </b><%= trader.strategyName %></h4>
+    <h4><b>Strategy Description: </b><%= trader.strategyDescription %></h4>
+    <h4><b>Indicators Used: </b><%= trader.indicators %></h4>
+</div>
+
+<div class="button-container">
+    <form class="delete-form" method="POST" action="/traders/<%= trader._id %>?_method=DELETE" onsubmit="return confirm('Are you sure you want to delete this trade?');">
+      <button type="submit">Delete</button>
+    </form>
+  
+    <form class="edit-form" method="GET" action="/traders/<%= trader._id %>/edit">
+      <button type="submit">Edit</button>
+    </form>
+</div>
+
+<%- include('../partials/footer') %>
+
+
+

@@ -1,0 +1,22 @@
+<%- include('../partials/header') %>
+
+<h3>Edit Trade</h3>
+
+<form method="POST" action="/traders/<%= trader._id %>?_method=PUT">
+    <br>
+    <input type="text" id="traderName" name="traderName" value="<%= trader.traderName %>" placeholder="Your Name">
+
+    <input type="text" id="tickerName" name="tickerName" value="<%= trader.tickerName %>" placeholder="Ticker Name">
+
+    <input type="text" id="strategyName" name="strategyName" value="<%= trader.strategyName%>" placeholder="Strategy Name">
+  
+    <textarea name="strategyDescription" id="strategyDescription" cols="30" rows="3" placeholder="Description"></textarea>
+    <!-- <input type="textarea" id="strategyDescription" name="strategyDescription" required> -->
+  
+    <textarea name="indicators" id="indicators" cols="30" rows="3" placeholder="Indicators"></textarea>
+    <!-- <input type="text" id="indicators" name="indicators" value="<%= trader.indicators %>" placeholder="Indicators"> -->
+
+  <button type="submit" id="updateButton">Update Trade</button>
+</form>
+
+<%- include('../partials/footer') %>

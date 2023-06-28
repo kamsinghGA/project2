@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #f7f7f7;
+  padding-left: 20px; /* Add left padding to create space */
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px;
+}
+
+/* Header */
+header {
+  background-color: #233e58;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+/* Navigation */
+nav {
+  margin-top: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: rgb(42,82,190); /* Change the color of the navigation links */
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #a4c2d9;
+}
+
+/* Main Content */
+main {
+  background-color: #ffffff;
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #233e58;
+  padding-left: 40px; /* Increase left padding to add more space */
+}
+
+/* Footer */
+footer {
+  background-color: #233e58;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #a4c2d9;
+}
+
+/* Add the following CSS code */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+form label {
+  display: inline-block;
+  width: 150px; /* Adjust the width as needed */
+}
+
+form textarea {
+  width: 100%;
+  max-width: 400px; /* Adjust the maximum width as needed */
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+form input[type="text"],
+form textarea {
+  margin-bottom: 10px; /* Adjust the spacing between fields as needed */
+}
+
+#updateButton {
+  margin-top: 10px;
+}
+
+#newTradeButt {
+  margin-top:10px;
+}
+
+#tickerName{
+  margin-top: 10px;
+}
+h4{
+  font-weight: 100;
+}
+a{
+  text-decoration: none;
+}
+
+.trader-info {
+  margin-bottom: 20px;
+}
+
+.trader-info h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.trader-info h4 {
+  margin-bottom: 5px;
+}
+
+.trader-info b {
+  font-weight: bold;
+}
+
+.button-container {
+  margin-bottom: 10px;
+}
+
+.delete-form,
+.edit-form {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.delete-form button,
+.edit-form button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.edit-form button {
+  background-color: #2980b9;
+}
+
+/* Style the traders table */
+.traders-table {
+  width: 400px;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Style the table header */
+.traders-table th {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Style the table rows */
+.traders-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+}
+
+/* Apply alternating background color to rows */
+.traders-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Center the text in table cells */
+.traders-table td {
+  text-align: center;
+}

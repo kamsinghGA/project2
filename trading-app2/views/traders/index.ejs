@@ -1,0 +1,19 @@
+<%- include('../partials/header') %>
+
+<h1>All Traders</h1>
+
+<table class="traders-table">
+  <tr>
+    <th>Posts</th>
+  </tr>
+  <% traders.forEach(function(trade) { %>
+    <tr>
+      <td><a href="/traders/<%= trade._id %>"><%= trade.traderName %></a></td>
+    </tr>
+  <% }); %>
+</table>
+
+<%- include('../partials/footer') %>
+
+
+
