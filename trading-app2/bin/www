@@ -5,7 +5,7 @@
  */
 
 var app = require('../server');
-var debug = require('debug')('trading-app:server');
+var debug = require('debug')('trading-app2:server');
 var http = require('http');
 
 /**
